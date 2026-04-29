@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const avatarSampleVideo =
-  "https://res.cloudinary.com/dowcybzve/video/upload/v1776868318/avatar_2_ekxnl4.mp4";
+  "https://res.cloudinary.com/dowcybzve/video/upload/v1777475671/Listqik_CN_Intro_V2_2_jcpacb.mp4";
 
 export default function Home() {
   const avatarVideoRef = useRef<HTMLVideoElement | null>(null);
