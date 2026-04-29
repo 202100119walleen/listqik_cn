@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, Playfair_Display } from "next/font/google";
+import { DM_Sans, Noto_Sans_SC, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -11,6 +11,13 @@ const dmSans = DM_Sans({
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const notoSansSc = Noto_Sans_SC({
+  variable: "--font-noto-sc",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -26,7 +33,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={`${dmSans.variable} ${playfairDisplay.variable}`}>
+    <html
+      lang="zh-CN"
+      className={`${dmSans.variable} ${playfairDisplay.variable} ${notoSansSc.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

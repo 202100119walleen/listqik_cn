@@ -71,8 +71,9 @@
 
 .topNav nav a {
   color: #b5e3d5;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.88rem;
+  letter-spacing: 0;
   padding: 0.48rem 0.8rem;
   border-radius: 999px;
   transition: background-color 180ms ease, color 180ms ease;
